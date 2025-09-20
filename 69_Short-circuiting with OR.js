@@ -3,6 +3,7 @@ const jobHunter = {
   jobSearchArea: 'Europe',
 };
 
+/*METHOD 1*/
 /***** if else *****/
 // if (jobHunter.jobSearchArea) {
 //   console.log(
@@ -12,11 +13,14 @@ const jobHunter = {
 //   console.log(`${jobHunter.name}'s work location is Worldwide`);
 // }
 
-/***** ternary *****/
+/*METHOD 2*/
+/***** Ternary *****/
 // const workLocation = jobHunter.jobSearchArea
 //   ? jobHunter.jobSearchArea
 //   : 'Worldwide';
 // console.log(`${jobHunter.name}'s work location is ${workLocation}`);
 
+/*METHOD 3*/
+/***** Short-circuiting with OR (||) *****/
 const workLocation = jobHunter.jobSearchArea || 'Worldwide';
 console.log(`${jobHunter.name}'s work location is ${workLocation}`);
